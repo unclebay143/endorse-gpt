@@ -93,7 +93,7 @@ function Form({ handleSubmit }: { handleSubmit: Function }) {
                     >
                       <CounterBadge count='4' className='mb-5' />
                       <div>
-                        Anecdotes of the person's contributions or
+                        Anecdotes of the person&apos;s contributions or
                         accomplishments in the workplace{" "}
                         <span className='text-slate-500'>(optional)</span>
                       </div>
