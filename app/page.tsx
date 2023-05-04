@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "./components/header";
 import Form from "./components/form";
 import Footer from "./components/footer";
@@ -13,13 +13,14 @@ import FormModeToggle from "./components/form-mode-toggle";
 import NoteForm from "./components/note-form";
 
 export default function Home() {
-  const isDarkMode = JSON.parse(window.localStorage.getItem("isDarkMode")!);
-  const [darkMode, setDarkMode] = useState<boolean>(isDarkMode);
-  const __isWriteNoteMode = JSON.parse(
-    window.localStorage.getItem("isWriteNoteMode")!
-  );
-  const [isWriteNoteMode, setIsWriteNoteMode] =
-    useState<boolean>(__isWriteNoteMode);
+  //theme
+  const [isDarkModeInitialized, setIsDarkModeInitialized] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState<boolean>(false);
+  //form mode
+  const [isWriteNoteModeInitialized, setIsWriteNoteModeInitialized] =
+    useState(false);
+  const [isWriteNoteMode, setIsWriteNoteMode] = useState<boolean>(false);
+
   const [isGeneratingResponse, setIsGeneratingResponse] =
     useState<boolean>(false);
 
@@ -37,13 +38,32 @@ export default function Home() {
     localStorage.setItem("isWriteNoteMode", JSON.stringify(_isWriteNoteMode));
   };
 
+  useEffect(() => {
+    const isDarkModeFromLocalStorage = JSON.parse(
+      localStorage.getItem("isDarkMode") || "false"
+    );
+
+    const isWriteNoteModeFromLocalStorage = JSON.parse(
+      localStorage.getItem("isWriteNoteMode") || "false"
+    );
+
+    setIsDarkMode(isDarkModeFromLocalStorage);
+    setIsWriteNoteMode(isWriteNoteModeFromLocalStorage);
+    setIsDarkModeInitialized(true);
+    setIsWriteNoteModeInitialized(true);
+  }, []);
+
+  if (!isDarkModeInitialized || !isWriteNoteModeInitialized) {
+    return null; // or a loading spinner or anything else to show
+  }
+
   return (
-    <main className={`${darkMode ? "dark" : ""}`}>
+    <main className={`${isDarkMode ? "dark" : ""}`}>
       <ThemeWrapper>
         <MaxWidthWrapper>
           <div className='flex flex-col justify-between min-h-screen'>
             <div>
-              <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+              <Header darkMode={isDarkMode} setDarkMode={setIsDarkMode} />
               {isGeneratingResponse ? (
                 <ResponseCardLoader count={2} />
               ) : (
