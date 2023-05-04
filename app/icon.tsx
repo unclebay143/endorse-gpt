@@ -1,5 +1,5 @@
 import { ImageResponse } from "next/server";
-import Sparkles from "./shared/icons/sparkles";
+import { WhiteSparkles } from "./shared/icons/sparkles";
 
 export const size = {
   width: 32,
@@ -23,7 +23,7 @@ export default function icon() {
           color: "white",
         }}
       >
-        <Sparkles />
+        <WhiteSparkles />
       </div>
     ),
     size

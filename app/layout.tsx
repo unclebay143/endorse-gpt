@@ -4,9 +4,9 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "EndorserGPT",
+  title: "Endorsement Generator",
   description:
-    "The AI-powered recommendation generator that helps you write compelling and effective recommendations in minutes!",
+    "EndorseGPT - The AI-powered recommendation generator that helps you write compelling and effective recommendations in minutes!",
 };
 
 export default function RootLayout({

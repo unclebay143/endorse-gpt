@@ -1,3 +1,65 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#nprogress .bar {
+  background-color: black !important;
+}
+
+#nprogress .spinner {
+  display: none !important;
+  /* 
+  display: block;
+  position: fixed;
+  z-index: 1031;
+  top: 15px;
+  left: 15px; */
+}
+/* 
+#nprogress .spinner-icon {
+  width: 18px;
+  height: 18px;
+  box-sizing: border-box;
+
+  border: solid 2px transparent;
+  border-top-color: black !important;
+  border-left-color: black !important;
+  border-radius: 50%;
+
+  -webkit-animation: nprogress-spinner 400ms linear infinite;
+  animation: nprogress-spinner 400ms linear infinite;
+} */
+
+.emphasis {
+  position: relative;
+  z-index: 2;
+}
+
+.emphasis::before {
+  position: absolute;
+  content: "";
+  background-image: url("./../public/_static/download.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  background-size: cover;
+  width: 110%;
+  height: 7px;
+  bottom: -5px;
+  left: -5%;
+  z-index: 1;
+}
+
+.toggle-checkbox:checked {
+  @apply: right-0 border-blue-400;
+  right: 0;
+  /* border-color: #68d391; */
+  border-color: rgb(37 99 235);
+  /* border-color: rgb(147 197 253); */
+}
+.toggle-checkbox:checked + .toggle-label {
+  @apply: bg-blue-400;
+  /* background-color: #68d391; */
+  background: rgb(37 99 235 / 1);
+  /* background: rgb(147 197 253 / 1); */
+}

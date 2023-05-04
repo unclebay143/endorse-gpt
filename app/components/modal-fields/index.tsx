@@ -10,7 +10,7 @@ export const NameField = ({
       <div className='w-full mb-5'>
         <label
           htmlFor='name'
-          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300'
+          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300 text-black'
         >
           <div>
             Full name{" "}
@@ -25,7 +25,7 @@ export const NameField = ({
           id='name'
           value={value}
           onChange={(event) => setValue(event.target.value)}
-          className='w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
+          className='w-full px-4 py-2 border border-gray-300 rounded-md focus:text-black focus:ring-1 focus:ring-black focus:outline-none  dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
         />
       </div>
     </>
@@ -44,7 +44,7 @@ export const CompanyField = ({
       <div className='w-full mb-5'>
         <label
           htmlFor='company'
-          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300'
+          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300 text-black'
         >
           <div>Company you both worked at together</div>
         </label>
@@ -54,7 +54,7 @@ export const CompanyField = ({
           id='company'
           value={value}
           onChange={(event) => setValue(event.target.value)}
-          className='w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
+          className='w-full px-4 py-2 border border-gray-300 rounded-md focus:text-black focus:ring-1 focus:ring-black focus:outline-none  dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
         />
       </div>
     </>
@@ -73,7 +73,7 @@ export const SkillsField = ({
       <div className='w-full mb-5'>
         <label
           htmlFor='company'
-          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300'
+          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300 text-black'
         >
           <div>
             Key strengths and skills that stand out{" "}
@@ -86,7 +86,7 @@ export const SkillsField = ({
           id='company'
           value={value}
           onChange={(event) => setValue(event.target.value)}
-          className='w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
+          className='w-full px-4 py-2 border border-gray-300 rounded-md focus:text-black focus:ring-1 focus:ring-black focus:outline-none  dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
         />
       </div>
     </>
@@ -105,7 +105,7 @@ export const PositionField = ({
       <div className='w-full mb-5'>
         <label
           htmlFor='company'
-          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300'
+          className='flex items-center gap-3 mb-5 font-medium transition dark:text-gray-300 text-black'
         >
           Position or job title{" "}
           <span className='text-slate-500'>
@@ -118,7 +118,7 @@ export const PositionField = ({
           id='company'
           value={value}
           onChange={(event) => setValue(event.target.value)}
-          className='w-full px-4 py-2 border border-gray-300 rounded-md dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
+          className='w-full px-4 py-2 border border-gray-300 rounded-md focus:text-black focus:ring-1 focus:ring-black focus:outline-none  dark:bg-gray-700 dark:text-white dark:border-gray-700 focus:border-gray-300'
         />
       </div>
     </>

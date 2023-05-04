@@ -22,7 +22,8 @@ const PlaceholderSpan = ({
           return (
             <span
               key={index}
-              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
+              // className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-blue-500 dark:text-blue-300 bg-blue-50 dark:bg-blue-800 ring-1 ring-inset ring-blue-500/10'
+              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-slate-500 dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
               onClick={() => handlePlaceholderClick("name")}
             >
               {name}
@@ -32,7 +33,8 @@ const PlaceholderSpan = ({
           return (
             <span
               key={index}
-              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
+              // className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-blue-500 dark:text-blue-300 bg-blue-50 dark:bg-blue-800 ring-1 ring-inset ring-blue-500/10'
+              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-slate-500 dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
               onClick={() => handlePlaceholderClick("skills")}
             >
               {skills}
@@ -42,7 +44,8 @@ const PlaceholderSpan = ({
           return (
             <span
               key={index}
-              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
+              // className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-blue-500 dark:text-blue-300 bg-blue-50 dark:bg-blue-800 ring-1 ring-inset ring-blue-500/10'
+              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-slate-500 dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
               onClick={() => handlePlaceholderClick("company")}
             >
               {company}
@@ -52,7 +55,8 @@ const PlaceholderSpan = ({
           return (
             <span
               key={index}
-              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
+              // className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-blue-500 dark:text-blue-300 bg-blue-50 dark:bg-blue-800 ring-1 ring-inset ring-blue-500/10'
+              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-slate-500 dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
               onClick={() => handlePlaceholderClick("position")}
             >
               {position}
@@ -62,7 +66,8 @@ const PlaceholderSpan = ({
           return (
             <span
               key={index}
-              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
+              // className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-blue-500 dark:text-blue-300 bg-blue-50 dark:bg-blue-800 ring-1 ring-inset ring-blue-500/10'
+              className='inline-flex items-center px-2 py-1 mr-1 text-sm font-medium rounded-md cursor-pointer text-slate-500 dark:text-gray-300 bg-gray-50 dark:bg-slate-800 ring-1 ring-inset ring-gray-500/10'
             >
               {word}
             </span>
